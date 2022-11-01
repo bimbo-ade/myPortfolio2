@@ -1,24 +1,65 @@
 import React from "react";
 import "./Banner.css";
-import house from "../../assets/Images/house.jpg";
+import hood1 from "../../assets/Images/hood1.jpg";
 const Banner = () => {
   return (
     <>
-      <div className="banner-cont">
-        <div className="banner-img">
-          <img src={house} alt="banner" />
-          <div className="banner-overlay"></div>
-          <div className="banner-content">
-            <h1>Hi, Im Abimbola Adeyemi</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Expedita, omnis?
-            </p>
+      <div className="banner-wrapper">
+        <div className="banner-content">
+          <h1>
+            <span>H</span>
+            <span>i</span>
+            <span>,</span>
+            <br />
+            <span>I</span>
+            <span>'</span>
+            <span>m</span>
+            <span> </span>
+            <span>A</span>
+            <span>b</span>
+            <span>i</span>
+            <span>m</span>
+            <span>b</span>
+            <span>o</span>
+            <span>l</span>
+            <span>a</span>
+            {/* <br />
+          <span>w</span>
+          <span>e</span>
+          <span>b</span>
+
+          <span> </span>
+          <span>d</span>
+          <span>e</span>
+          <span>v</span>
+          <span>e</span>
+          <span>l</span>
+          <span>o</span>
+          <span>p</span>
+          <span>e</span>
+          <span>r</span> */}
+          </h1>
+          <div className="btn">
             <button>
-              <span></span> see more
+              {" "}
+              <span></span>My Projects
+            </button>
+            <button>
+              <span></span> Contact me
             </button>
           </div>
         </div>
+        <div
+          className="banner-img"
+          style={{
+            backgroundImage: `url(${hood1})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundFit: "fit",
+            backgroundRepeat: "no-repeat",
+            width: "400px",
+          }}
+        ></div>
       </div>
     </>
   );

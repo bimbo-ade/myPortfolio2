@@ -1,58 +1,91 @@
-/* banner */
-.banner-cont {
-  width: 100%;
+.banner-wrapper {
+  height: 100vh;
+  width: 90%;
+
+  margin: 0 auto 0;
+  display: grid;
+  grid-template-columns: 60% 40%;
 }
 .banner-content {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1 {
+  font-size: 4rem;
+  line-height: 70px;
+  letter-spacing: 0.3rem;
+  margin-bottom: 5rem;
+  position: relative;
+}
+h1::after {
+  content: "<p> A frontend Developer </p>";
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 20px;
   position: absolute;
-  color: var(--yellow);
-  top: 33%;
-  left: 33%;
+  left: 0;
+  bottom: -4rem;
 }
-.banner-content h1 {
-  font-size: 3rem;
+
+h1 span:hover {
+  color: rgb(88, 87, 86);
+  animation-name: animate;
+  animation-duration: 0.7s;
 }
-.banner-content button {
-  padding: 0.5rem 1.2rem;
-  border-radius: 0.3rem;
+
+@keyframes animate {
+  10% {
+    color: rgb(212, 209, 209);
+  }
+  18% {
+    color: rgb(90, 90, 89);
+  }
+  25% {
+    color: rgb(92, 92, 83);
+  }
+  45% {
+    color: rgb(30, 30, 31);
+  }
+  60% {
+    color: rgb(155, 154, 153);
+  }
+  75% {
+    color: rgb(65, 60, 60);
+  }
+  100% {
+    color: rgb(12, 10, 12);
+  }
+}
+
+button {
+  padding: 0.9rem 2rem;
+  /* border-radius: 0.3rem; */
   border: 1px solid white;
   outline: none;
+  font-weight: 00;
   background-color: transparent;
+  color: rgb(136, 135, 135);
+  letter-spacing: 0.3rem;
+  font-size: 1.2rem;
   position: relative;
   overflow: hidden;
+  margin-right: 2rem;
   z-index: 2;
 }
-.banner-content button span {
-  background-color: red;
+button span {
+  background-color: white;
+
   height: 100%;
   width: 0;
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 0.3rem;
+  /* border-radius: 0.3rem; */
   z-index: -1;
-  transition: 0.2s;
+  transition: 0.3s;
 }
-.banner-content button:hover span {
+button:hover span {
   width: 100%;
-}
-.banner-img {
-  width: 100%;
-  height: 70%;
-  position: relative;
-}
-.banner-img img {
-  height: 550px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-}
-.banner-overlay {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
 }
