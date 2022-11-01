@@ -89,3 +89,21 @@ button span {
 button:hover span {
   width: 100%;
 }
+
+.banner-img {
+  background-color: rgba(22, 21, 21, 0.6);
+  width: 100%;
+  height: 90%;
+  margin-top: 2rem;
+  overflow: hidden;
+  border-radius: 70% 20% 80% 50%;
+  transition: 0.3s;
+}
+
+.banner-img img {
+  margin-left: -10rem;
+  transition: 0.3s;
+}
+.banner-img img:hover {
+  transform: scale(0.9);
+}

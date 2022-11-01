@@ -1,6 +1,6 @@
 import React from "react";
 import "./Banner.css";
-import hood1 from "../../assets/Images/hood1.jpg";
+import hood3 from "../../assets/Images/hood3.png";
 const Banner = () => {
   return (
     <>
@@ -49,7 +49,10 @@ const Banner = () => {
             </button>
           </div>
         </div>
-        <div
+        <div className="banner-img">
+          <img src={hood3} alt="" width={810} />
+        </div>
+        {/* <div
           className="banner-img"
           style={{
             backgroundImage: `url(${hood1})`,
@@ -59,7 +62,7 @@ const Banner = () => {
             backgroundRepeat: "no-repeat",
             width: "400px",
           }}
-        ></div>
+        ></div> */}
       </div>
     </>
   );
