@@ -6,7 +6,8 @@ import { loadFull } from "tsparticles";
 const ParticlesPage = () => {
   const optionVar = {
     fullScreen: {
-      enable: true,
+      enable: false,
+
       zIndex: -1,
     },
     particles: {

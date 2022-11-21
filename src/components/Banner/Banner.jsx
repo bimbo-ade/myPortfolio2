@@ -1,9 +1,12 @@
 import React from "react";
 import "./Banner.css";
+import ParticlesPage from "../config/ParticlesPage";
 import hood3 from "../../assets/Images/hood3.png";
 const Banner = () => {
   return (
     <>
+      {" "}
+      <ParticlesPage />
       <div className="banner-wrapper">
         <div className="banner-content">
           <h1>
@@ -23,21 +26,6 @@ const Banner = () => {
             <span>o</span>
             <span>l</span>
             <span>a</span>
-            {/* <br />
-          <span>w</span>
-          <span>e</span>
-          <span>b</span>
-
-          <span> </span>
-          <span>d</span>
-          <span>e</span>
-          <span>v</span>
-          <span>e</span>
-          <span>l</span>
-          <span>o</span>
-          <span>p</span>
-          <span>e</span>
-          <span>r</span> */}
           </h1>
           <div className="btn">
             <button>
@@ -52,17 +40,6 @@ const Banner = () => {
         <div className="banner-img">
           <img src={hood3} alt="" width={810} />
         </div>
-        {/* <div
-          className="banner-img"
-          style={{
-            backgroundImage: `url(${hood1})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundFit: "fit",
-            backgroundRepeat: "no-repeat",
-            width: "400px",
-          }}
-        ></div> */}
       </div>
     </>
   );

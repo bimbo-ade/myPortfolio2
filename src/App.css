@@ -1,8 +1,12 @@
 :root {
-  --bg-general: rgb(20, 20, 20);
-  --text-general: white;
+  --black: #111111;
+  --gray: #636363;
+  --gray-bg: rgba(51, 51, 51, 0.3);
+  --white: rgb(228, 228, 228);
+}
+#tsparticles {
+  height: 100vh;
 }
 body {
-  background-color: var(--bg-general);
-  color: var(--text-general);
+  background-color: black;
 }
