@@ -20,19 +20,76 @@ const About = () => {
         </h1>{" "}
         <div className="about-content">
           <div className="about-me">
-            <div className="text">
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Perferendis ad dicta facere quo, laborum corporis. Aut enim
-                consequatur amet dolore?
-              </p>
+            <div className="text-header">
+              <h3>Who is Abimbola?</h3>
             </div>
-            <div className="progress-bar">
-              <ProgressBar completed={60} />
+
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+              at. Facere eveniet ratione, laudantium deserunt modi placeat
+              sapiente Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Tempore, at. Facere eveniet ratione, laudantium deserunt modi
+              placeat sapiente repellat ex perspiciatis vitae eligendi. Mollitia
+              tempora iste neque, dolores sint alias?repellat ex perspiciatis
+              vitae eligendi. Mollitia tempora iste neque, dolores sint alias?
+            </p>
+          </div>
+          <div className="about-me">
+            <div className="text">
+              <div className="text-header">
+                <h3>My Skiils</h3>
+              </div>
+            </div>
+            <div className="cont">
+              <div className="progress-bar">
+                <h3>Reactjs</h3>
+                <ProgressBar
+                  completed={80}
+                  className="pb"
+                  baseBgColor="var(--white)"
+                  borderRadius="0"
+                  height="10px"
+                  bgColor="var(--gray)"
+                  labelSize="9px"
+                />
+              </div>
+              <div className="progress-bar">
+                <h3>Tailwin, Bootsrap, SASS</h3>
+                <ProgressBar
+                  completed={70}
+                  className="pb"
+                  baseBgColor="var(--white)"
+                  borderRadius="0"
+                  height="10px"
+                  bgColor="var(--gray)"
+                  labelSize="9px"
+                />
+              </div>
+              <div className="progress-bar">
+                <h3>Reactjs</h3>
+                <ProgressBar
+                  completed={60}
+                  className="pb"
+                  baseBgColor="var(--white)"
+                  borderRadius="0"
+                  height="10px"
+                  bgColor="var(--gray)"
+                  labelSize="9px"
+                />
+              </div>
             </div>
           </div>
-          <div className="skills"></div>
-          <div className="work-timeline"></div>
+          <div className="about-me">
+            <div className="text-header">
+              <h3>Experience</h3>
+            </div>
+
+            <div className="experience">
+              <h5>Frontend Developer</h5>
+              <h6>Citiserve Limited,Nigeria</h6>
+              <span>2021-2022</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
