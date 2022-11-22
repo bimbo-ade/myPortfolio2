@@ -1,12 +1,33 @@
 import React from "react";
 import "./Banner.css";
 import ParticlesPage from "../config/ParticlesPage";
+import {
+  AiOutlineHome,
+  AiOutlineUser,
+  AiOutlineProject,
+  AiOutlineMessage,
+} from "react-icons/ai";
+import { BiMoon } from "react-icons/bi";
+import { BsSun } from "react-icons/bs";
 import hood3 from "../../assets/Images/hood3.png";
 const Banner = () => {
   return (
     <>
       {" "}
       <ParticlesPage />
+      <div className="navlinks">
+        <AiOutlineHome />
+
+        <AiOutlineUser />
+
+        <AiOutlineProject />
+
+        <AiOutlineMessage />
+
+        <BiMoon />
+
+        <BsSun />
+      </div>
       <div className="banner-wrapper">
         <div className="banner-content">
           <h1>
