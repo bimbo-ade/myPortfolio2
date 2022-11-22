@@ -58,7 +58,8 @@ const Projects = () => {
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Beatae, consequatur?
                 </p>
-                <button>view project</button>
+                <button>Live Demo</button>
+                <button>Github</button>
               </div>
             </div>
           </div>

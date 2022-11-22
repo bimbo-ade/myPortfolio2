@@ -54,7 +54,19 @@ const About = () => {
                 />
               </div>
               <div className="progress-bar">
-                <h3>Tailwin, Bootsrap, SASS</h3>
+                <h3>HTML & CSS</h3>
+                <ProgressBar
+                  completed={100}
+                  className="pb"
+                  baseBgColor="var(--white)"
+                  borderRadius="0"
+                  height="10px"
+                  bgColor="var(--gray)"
+                  labelSize="9px"
+                />
+              </div>
+              <div className="progress-bar">
+                <h3>Tailwind, Bootsrap, SASS</h3>
                 <ProgressBar
                   completed={70}
                   className="pb"
@@ -66,9 +78,21 @@ const About = () => {
                 />
               </div>
               <div className="progress-bar">
-                <h3>Reactjs</h3>
+                <h3>Next Js</h3>
                 <ProgressBar
-                  completed={60}
+                  completed={50}
+                  className="pb"
+                  baseBgColor="var(--white)"
+                  borderRadius="0"
+                  height="10px"
+                  bgColor="var(--gray)"
+                  labelSize="9px"
+                />
+              </div>
+              <div className="progress-bar">
+                <h3>Typescript</h3>
+                <ProgressBar
+                  completed={20}
                   className="pb"
                   baseBgColor="var(--white)"
                   borderRadius="0"
