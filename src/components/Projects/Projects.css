@@ -1,11 +1,10 @@
 .project-container {
-  width: 90%;
+  width: 80%;
   position: relative;
-  margin: 5rem auto;
-  height: 100vh;
+  margin: 4rem auto;
 }
 
-.header {
+/* .header {
   font-size: 3rem;
   line-height: 70px;
   letter-spacing: 0.3rem;
@@ -18,9 +17,9 @@
   color: var(--gray);
   animation-name: animate;
   animation-duration: 0.7s;
-}
+} */
 
-@keyframes animate {
+/* @keyframes animate {
   10% {
     color: rgb(212, 209, 209);
   }
@@ -42,27 +41,7 @@
   100% {
     color: rgb(12, 10, 12);
   }
-}
-
-.header::before {
-  content: "<h1>";
-  font-family: "La Belle Aurore", cursive;
-  color: var(--gray);
-  font-size: 20px;
-  position: absolute;
-  left: 0;
-  top: -80%;
-  bottom: -4rem;
-}
-.header::after {
-  content: "</h1>";
-  font-family: "La Belle Aurore", cursive;
-  color: var(--gray);
-  font-size: 20px;
-  position: absolute;
-  left: 0;
-  bottom: -4rem;
-}
+} */
 
 .project-container-card {
   display: flex;
@@ -75,16 +54,16 @@
 }
 
 .project-container-card .card {
-  background-color: var(--white);
-  height: 400px;
-  width: 330px;
+  background-color: white;
+  height: 350px;
+  width: 300px;
   border-radius: 0;
 }
 
 .card .image {
   background-size: cover;
-  height: 96%;
-  width: 96%;
+  height: 80%;
+  width: 80%;
   margin: auto;
   position: relative;
 }

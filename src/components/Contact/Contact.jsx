@@ -12,6 +12,8 @@ const Contact = () => {
     <div>
       {" "}
       <div className="contact-container">
+        {" "}
+        <div className="underlay">Contact</div>
         <h1 className="header">
           {" "}
           <span>C</span>
@@ -43,7 +45,7 @@ const Contact = () => {
           </div>
           <div className="form">
             <input type="text" placeholder="name" />
-            <input type="text" placeholder="subject" />
+            <input type="email" placeholder="email" />
             <textarea placeholder="type a message..."></textarea>
             <button>
               <span></span> send message

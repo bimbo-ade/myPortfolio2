@@ -7,6 +7,7 @@ const About = () => {
   return (
     <div>
       <div className="about-container">
+        <div className="underlay">About</div>
         <h1 className="header">
           {" "}
           <span>A</span>
@@ -48,7 +49,7 @@ const About = () => {
                   className="pb"
                   baseBgColor="var(--white)"
                   borderRadius="0"
-                  height="10px"
+                  height="8px"
                   bgColor="var(--gray)"
                   labelSize="9px"
                 />
@@ -60,7 +61,7 @@ const About = () => {
                   className="pb"
                   baseBgColor="var(--white)"
                   borderRadius="0"
-                  height="10px"
+                  height="8px"
                   bgColor="var(--gray)"
                   labelSize="9px"
                 />
@@ -72,7 +73,7 @@ const About = () => {
                   className="pb"
                   baseBgColor="var(--white)"
                   borderRadius="0"
-                  height="10px"
+                  height="8px"
                   bgColor="var(--gray)"
                   labelSize="9px"
                 />
@@ -84,7 +85,7 @@ const About = () => {
                   className="pb"
                   baseBgColor="var(--white)"
                   borderRadius="0"
-                  height="10px"
+                  height="8px"
                   bgColor="var(--gray)"
                   labelSize="9px"
                 />
@@ -96,7 +97,7 @@ const About = () => {
                   className="pb"
                   baseBgColor="var(--white)"
                   borderRadius="0"
-                  height="10px"
+                  height="8px"
                   bgColor="var(--gray)"
                   labelSize="9px"
                 />
@@ -109,9 +110,9 @@ const About = () => {
             </div>
 
             <div className="experience">
-              <h5>Frontend Developer</h5>
+              <h6>Frontend Developer</h6>
               <h6>Citiserve Limited,Nigeria</h6>
-              <span>2021-2022</span>
+              <h6>2021-2022</h6>
             </div>
           </div>
         </div>

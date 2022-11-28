@@ -104,7 +104,7 @@ const ParticlesPage = () => {
     },
     retina_detect: true,
     background: {
-      color: "#000",
+      color: "var(--black)",
       image: "",
       position: "50% 50%",
       repeat: "no-repeat",

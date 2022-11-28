@@ -5,6 +5,8 @@ const Projects = () => {
   return (
     <div>
       <div className="project-container">
+        {" "}
+        <div className="underlay">Projects</div>
         <h1 className="header">
           {" "}
           <span>M</span>
