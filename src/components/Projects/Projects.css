@@ -149,3 +149,14 @@
     transition: 0.3s;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .project-container-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+  }
+}

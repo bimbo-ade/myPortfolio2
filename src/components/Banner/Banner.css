@@ -133,18 +133,64 @@
 
   .banner-content .btn {
     display: flex;
-    justify-content: space-between;
-    width: 90%;
+    align-items: center;
+    width: 310px;
     margin: 0 auto;
+    padding: 0;
   }
   .banner-content button {
     padding: 0.6rem 0.7rem;
     margin-right: 0;
-    border: 1px solid white;
+    border: 1px solid var(--white);
     font-size: 0.6rem;
+    margin-right: 1rem;
   }
 
   .banner-img {
     display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .banner-wrapper {
+    width: 100%;
+    grid-template-columns: 100%;
+    left: 0;
+  }
+  .banner-content {
+    align-items: center;
+  }
+  .banner-content h1 {
+    font-size: 4rem;
+    line-height: 70px;
+    width: 510px;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  .banner-content h1::after {
+    font-size: 16px;
+    bottom: -4rem;
+  }
+
+  .banner-content .btn {
+    display: flex;
+    align-items: center;
+    width: 510px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .banner-content button {
+    padding: 0.6rem 0.7rem;
+    margin-right: 0;
+    border: 1px solid var(--white);
+    font-size: 0.6rem;
+    margin-right: 1rem;
+  }
+  .banner-img {
+    display: none;
+  }
+  p {
+    color: var(--white);
+    display: flex;
   }
 }

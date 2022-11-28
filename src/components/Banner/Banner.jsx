@@ -27,6 +27,11 @@ const Banner = () => {
             <span>l</span>
             <span>a</span>
           </h1>
+          <p hidden>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime,
+            quisquam quam quia perspiciatis explicabo soluta sequi eos.
+            Architecto, aut sequi.
+          </p>
           <div className="btn">
             <button>
               {" "}
