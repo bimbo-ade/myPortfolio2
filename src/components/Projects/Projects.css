@@ -98,3 +98,54 @@
   opacity: 1;
   z-index: 3;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .header {
+    font-size: 2.5rem;
+    line-height: 40px;
+    width: 310px;
+    padding-bottom: 1rem;
+    text-align: left;
+  }
+  .underlay {
+    left: 4rem;
+    bottom: 1rem;
+    font-size: 11rem;
+  }
+
+  .project-container-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .project-container-card .card {
+    background-color: var(--white);
+    height: 300px;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 0;
+  }
+
+  .card .image {
+    background-size: cover;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    position: relative;
+  }
+
+  .image span {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+  }
+}
