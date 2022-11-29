@@ -26,7 +26,7 @@
 }
 .banner-content h1::after {
   content: "<p> A frontend Developer </p>";
-  font-family: "La Belle Aurore", cursive;
+  font-family: "La Belle Aurore";
   color: var(--gray2);
   font-size: 20px;
   position: absolute;
@@ -65,21 +65,30 @@
 } */
 
 .banner-content button {
-  padding: 0.8rem 1.4rem;
-  /* border: 1px solid var(--white); */
+  padding: 0.3rem 1.4rem;
+  border: 1px solid var(--gray);
   outline: none;
   background-color: transparent;
-  color: var(--gray);
-  letter-spacing: 0.3rem;
+  color: var(--white);
   font-size: 1.2rem;
+  font-weight: 300;
   position: relative;
   overflow: hidden;
-  margin-right: 2rem;
+  margin-right: 1rem;
   z-index: 2;
+}
+.banner-content button:nth-child(1) {
+  background-color: var(--white);
+  color: var(--bg-color);
+}
+.banner-content button:nth-child(1):hover {
+  background-color: transparent;
+}
+.banner-content button:hover {
+  color: var(--bg-color);
 }
 .banner-content button span {
   background-color: var(--white);
-
   height: 100%;
   width: 0;
   position: absolute;
@@ -93,11 +102,12 @@
 }
 
 .banner-img {
-  background-color: var(--gray-bg);
+  background-color: var(--gray3);
   width: 100%;
   height: 90%;
   margin-top: 2rem;
   overflow: hidden;
+  border: 1px solid var(--gray-bg);
   border-radius: 70% 20% 80% 50%;
   transition: 0.3s;
 }

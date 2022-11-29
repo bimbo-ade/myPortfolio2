@@ -36,14 +36,14 @@
   }
 
   25% {
-    color: rgb(92, 92, 83);
+    color: var(--gray-bg);
   }
 
   60% {
     color: rgb(155, 154, 153);
   }
   75% {
-    color: rgb(65, 60, 60);
+    color: var(--gray-bg);
   }
   100% {
     color: rgb(12, 10, 12);
@@ -127,7 +127,9 @@
     margin-bottom: 5rem;
     gap: 5;
   }
-
+  .about-me p {
+    font-size: 14px;
+  }
   .text-header h3 {
     margin-bottom: 2.5rem;
   }

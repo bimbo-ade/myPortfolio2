@@ -1,17 +1,26 @@
 import React from "react";
+
+import { motion } from "framer-motion";
 import jedi3 from "../../assets/Images/jedi3.jpg";
 import "./Projects.css";
 const Projects = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: "100" }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+    >
       <div className="project-container">
         {" "}
         <div className="underlay">Projects</div>
-        <h1 className="header">
+        <motion.h1
+          className="header"
+          initial={{ y: 100 }}
+          animate={{ y: 0 }}
+          transition={{ type: "spring", stiffness: 200 }}
+        >
           {" "}
-          <span>M</span>
-          <span>y</span>
-          <span> </span>
           <span>P</span>
           <span>r</span>
           <span>o</span>
@@ -20,7 +29,7 @@ const Projects = () => {
           <span>c</span>
           <span>t</span>
           <span>s</span>
-        </h1>{" "}
+        </motion.h1>{" "}
         <div className="project-container-card">
           <div className="card">
             <div className="image" style={{ backgroundImage: `url(${jedi3})` }}>
@@ -32,7 +41,10 @@ const Projects = () => {
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Beatae, consequatur?
                 </p>
-                <button>view project</button>
+                <div className="btn-cont">
+                  <button>Live</button>
+                  <button>Github</button>
+                </div>
               </div>
             </div>
           </div>
@@ -46,7 +58,10 @@ const Projects = () => {
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Beatae, consequatur?
                 </p>
-                <button>view project</button>
+                <div className="btn-cont">
+                  <button>Live</button>
+                  <button>Github</button>
+                </div>
               </div>
             </div>
           </div>{" "}
@@ -60,14 +75,16 @@ const Projects = () => {
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Beatae, consequatur?
                 </p>
-                <button>Live Demo</button>
-                <button>Github</button>
+                <div className="btn-cont">
+                  <button>Live</button>
+                  <button>Github</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

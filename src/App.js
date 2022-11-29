@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
+import { BrowserRouter, NavLink } from "react-router-dom";
 import {
   AiOutlineHome,
   AiOutlineUser,
@@ -9,11 +9,7 @@ import {
 } from "react-icons/ai";
 import { BiMoon } from "react-icons/bi";
 import { BsSun } from "react-icons/bs";
-import About from "./components/About/About";
-import Banner from "./components/Banner/Banner";
-import Contact from "./components/Contact/Contact";
-import Projects from "./components/Projects/Projects";
-
+import AnimatedRoutes from "./AnimatedRoutes";
 function App() {
   const [theme, setTheme] = useState("dark-theme");
   const toggleTheme = () => {
@@ -50,12 +46,8 @@ function App() {
             <BiMoon onClick={toggleTheme} />
           )}
         </div>
-        <Routes>
-          <Route path="/" element={<Banner />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-        </Routes>
+
+        <AnimatedRoutes />
       </BrowserRouter>
     </div>
   );

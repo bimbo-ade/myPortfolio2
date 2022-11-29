@@ -47,7 +47,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  flex-wrap: wrap;
   width: 90%;
   position: relative;
   margin: 7rem auto 2rem;
@@ -57,19 +57,20 @@
   background-color: white;
   height: 350px;
   width: 300px;
+  margin-bottom: 2rem;
   border-radius: 0;
 }
 
 .card .image {
   background-size: cover;
-  height: 80%;
-  width: 80%;
+  height: 90%;
+  width: 90%;
   margin: auto;
   position: relative;
 }
 
 .image span {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 
   height: 100%;
   width: 0;
@@ -88,11 +89,37 @@
   opacity: 0;
   transition: 0.1s;
   height: 100%;
-  color: wheat;
+  color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.span-content h1 {
+  text-align: center;
+  font-size: 1.6rem;
+}
+.span-content p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.btn-cont {
+  display: flex;
+  width: 170px;
+  justify-content: space-around;
+}
+.span-content button {
+  text-align: center;
+  padding: 0.2rem 0.9rem;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid var(--gray);
+  margin-bottom: 0.3rem;
+  color: var(--white);
+}
+.span-content button:nth-child(1) {
+  background-color: var(--white);
+  color: var(--bg-color);
 }
 .image:hover .span-content {
   opacity: 1;
@@ -153,10 +180,18 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .project-container-card {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 0;
+  }
+
+  .project-container-card .card {
+    background-color: white;
+    height: 400px;
+    width: 300px;
+    border-radius: 0;
+    margin-bottom: 3rem;
   }
 }

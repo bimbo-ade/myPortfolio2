@@ -15,8 +15,8 @@
 }
 .light-theme {
   --bg-color: #111111;
-  --gray: #13da8e;
-  --gray-bg: #13da8e;
+  --gray: #da1376;
+  --gray-bg: #da1376;
   --white: rgb(255, 255, 255);
 }
 #tsparticles {
@@ -58,6 +58,9 @@ a:hover {
   color: var(--white);
 }
 
+a:focus {
+  border-bottom: 2px solid var(--white);
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .navlinks {
     position: fixed;

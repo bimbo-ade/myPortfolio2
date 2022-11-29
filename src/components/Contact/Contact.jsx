@@ -1,5 +1,7 @@
 import React from "react";
 import "./Contact.css";
+
+import { motion } from "framer-motion";
 import {
   AiOutlineMail,
   AiOutlineGithub,
@@ -9,12 +11,22 @@ import {
 import { BsTelephone } from "react-icons/bs";
 const Contact = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: "100" }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+    >
       {" "}
       <div className="contact-container">
         {" "}
         <div className="underlay">Contact</div>
-        <h1 className="header">
+        <motion.h1
+          className="header"
+          initial={{ y: 100 }}
+          animate={{ y: 0 }}
+          transition={{ type: "spring", stiffness: 200 }}
+        >
           {" "}
           <span>C</span>
           <span>o</span>
@@ -23,10 +35,7 @@ const Contact = () => {
           <span>a</span>
           <span>c</span>
           <span>t</span>
-          <span> </span>
-          <span>M</span>
-          <span>e</span>
-        </h1>{" "}
+        </motion.h1>{" "}
         <div className="contact-cont">
           <div className="contact">
             <p>
@@ -44,16 +53,16 @@ const Contact = () => {
             </div>
           </div>
           <div className="form">
-            <input type="text" placeholder="name" />
-            <input type="email" placeholder="email" />
-            <textarea placeholder="type a message..."></textarea>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <textarea placeholder="Type a message..."></textarea>
             <button>
-              <span></span> send message
+              <span></span> Send
             </button>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

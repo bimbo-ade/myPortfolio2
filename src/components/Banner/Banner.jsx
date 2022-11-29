@@ -1,5 +1,6 @@
 import React from "react";
 import "./Banner.css";
+import { motion } from "framer-motion";
 
 import ParticlesPage from "../config/ParticlesPage";
 import hood3 from "../../assets/Images/hood3.png";
@@ -7,10 +8,16 @@ const Banner = () => {
   return (
     <>
       <ParticlesPage />
-      <div className="banner-wrapper">
+      <motion.div
+        className="banner-wrapper"
+        initial={{ opacity: 0, y: "100" }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3 }}
+      >
         <div className="banner-content">
           <h1>
-            <span>H</span>
+            <span> H</span>
             <span>i</span>
             <span>,</span>
             <br />
@@ -33,19 +40,27 @@ const Banner = () => {
             Architecto, aut sequi.
           </p>
           <div className="btn">
-            <button>
+            <motion.button
+              initial={{ y: 100 }}
+              animate={{ y: 0 }}
+              transition={{ type: "spring", stiffness: 200 }}
+            >
               {" "}
               <span></span>My Projects
-            </button>
-            <button>
+            </motion.button>
+            <motion.button
+              initial={{ y: -100 }}
+              animate={{ y: 0 }}
+              transition={{ type: "spring", stiffness: 200 }}
+            >
               <span></span> Contact me
-            </button>
+            </motion.button>
           </div>
         </div>
-        <div className="banner-img">
+        <motion.div className="banner-img">
           <img src={hood3} alt="" width={810} />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </>
   );
 };
