@@ -46,7 +46,7 @@ body {
   backdrop-filter: blur(25px);
 }
 .navlinks svg {
-  font-size: 18px;
+  font-size: 20px;
 }
 .link {
   text-decoration: none;
@@ -71,7 +71,7 @@ a:focus {
     top: 85%;
     left: 10%;
     height: 60px;
-    width: 80%;
+    width: 90%;
     margin-left: 0;
     flex-direction: row;
     z-index: 3;
