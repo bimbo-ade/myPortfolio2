@@ -42,7 +42,8 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  backdrop-filter: blur(10px);
+  border-radius: 120px;
+  backdrop-filter: blur(25px);
 }
 .navlinks svg {
   font-size: 18px;
