@@ -1,5 +1,6 @@
 import React from "react";
 import "./Banner.css";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import ParticlesPage from "../config/ParticlesPage";
@@ -40,20 +41,26 @@ const Banner = () => {
             Architecto, aut sequi.
           </p>
           <div className="btn">
-            <motion.button
-              initial={{ y: 100 }}
-              animate={{ y: 0 }}
-              transition={{ type: "spring", stiffness: 200 }}
-            >
-              {" "}
-              <span></span>My Projects
-            </motion.button>
+            <Link to="/projects">
+              <motion.button
+                initial={{ y: 100 }}
+                animate={{ y: 0 }}
+                transition={{ type: "spring", stiffness: 200 }}
+              >
+                {" "}
+                <span></span>My Projects
+              </motion.button>
+            </Link>
+
             <motion.button
               initial={{ y: -100 }}
               animate={{ y: 0 }}
               transition={{ type: "spring", stiffness: 200 }}
             >
-              <span></span> Contact me
+              {" "}
+              <Link to="/contact">
+                <span></span> Contact me
+              </Link>
             </motion.button>
           </div>
         </div>
