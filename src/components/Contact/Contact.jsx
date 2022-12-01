@@ -18,7 +18,12 @@ const Contact = () => {
       transition={{ duration: 0.3 }}
     >
       {" "}
-      <div className="contact-container">
+      <motion.div
+        className="contact-container"
+        initial={{ y: 100 }}
+        animate={{ y: 0 }}
+        transition={{ type: "spring", stiffness: 200 }}
+      >
         {" "}
         <div className="underlay">Contact</div>
         <motion.h1
@@ -95,7 +100,7 @@ const Contact = () => {
             </button>
           </div>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

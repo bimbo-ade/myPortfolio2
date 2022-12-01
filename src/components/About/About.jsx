@@ -12,7 +12,12 @@ const About = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="about-container">
+      <motion.div
+        className="about-container"
+        initial={{ y: 100 }}
+        animate={{ y: 0 }}
+        transition={{ type: "spring", stiffness: 200 }}
+      >
         <div className="underlay">About</div>
         <motion.h1
           className="header"
@@ -30,20 +35,10 @@ const About = () => {
         <div className="about-content">
           <div className="about-me">
             <div className="text-header">
-              <motion.h3
-                initial={{ y: -100 }}
-                animate={{ y: 0 }}
-                transition={{ type: "spring", stiffness: 200 }}
-              >
-                Who is Abimbola?
-              </motion.h3>
+              <h3>Who is Abimbola?</h3>
             </div>
 
-            <motion.p
-              initial={{ y: 100 }}
-              animate={{ y: 0 }}
-              transition={{ type: "spring", stiffness: 200 }}
-            >
+            <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
               at. Facere eveniet ratione, laudantium deserunt modi placeat
               sapiente Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -51,7 +46,7 @@ const About = () => {
               placeat sapiente repellat ex perspiciatis vitae eligendi. Mollitia
               tempora iste neque, dolores sint alias?repellat ex perspiciatis
               vitae eligendi. Mollitia tempora iste neque, dolores sint alias?
-            </motion.p>
+            </p>
           </div>
           <div className="about-me">
             <div className="text">
@@ -134,7 +129,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

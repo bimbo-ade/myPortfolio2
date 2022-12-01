@@ -11,7 +11,12 @@ const Projects = () => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="project-container">
+      <motion.div
+        className="project-container"
+        initial={{ y: 100 }}
+        animate={{ y: 0 }}
+        transition={{ type: "spring", stiffness: 200 }}
+      >
         {" "}
         <div className="underlay">Projects</div>
         <motion.h1
@@ -83,7 +88,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
