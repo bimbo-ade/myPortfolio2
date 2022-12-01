@@ -45,11 +45,45 @@ const Contact = () => {
               voluptas libero minus accusamus!
             </p>
             <div className="social-icons">
-              <AiOutlineGithub />
-              <AiFillTwitterCircle />
-              <AiFillInstagram />
-              <AiOutlineMail />
-              <BsTelephone />
+              <a
+                href="https://github.com/bimbo-ade"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <AiOutlineGithub />
+              </a>
+
+              <a
+                href="https://twitter.com/damisayrah_"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillTwitterCircle />
+              </a>
+
+              <a
+                href="https://www.instagram.com/damisayrah_/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillInstagram />
+              </a>
+              <a
+                href="mailto:bimboadeyemi65@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiOutlineMail />
+              </a>
+
+              <a
+                href="tel:+2348162471353"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <BsTelephone />
+              </a>
             </div>
           </div>
           <div className="form">

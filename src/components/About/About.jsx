@@ -30,10 +30,20 @@ const About = () => {
         <div className="about-content">
           <div className="about-me">
             <div className="text-header">
-              <h3>Who is Abimbola?</h3>
+              <motion.h3
+                initial={{ y: -100 }}
+                animate={{ y: 0 }}
+                transition={{ type: "spring", stiffness: 200 }}
+              >
+                Who is Abimbola?
+              </motion.h3>
             </div>
 
-            <p>
+            <motion.p
+              initial={{ y: 100 }}
+              animate={{ y: 0 }}
+              transition={{ type: "spring", stiffness: 200 }}
+            >
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
               at. Facere eveniet ratione, laudantium deserunt modi placeat
               sapiente Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -41,7 +51,7 @@ const About = () => {
               placeat sapiente repellat ex perspiciatis vitae eligendi. Mollitia
               tempora iste neque, dolores sint alias?repellat ex perspiciatis
               vitae eligendi. Mollitia tempora iste neque, dolores sint alias?
-            </p>
+            </motion.p>
           </div>
           <div className="about-me">
             <div className="text">

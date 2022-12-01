@@ -62,9 +62,6 @@ a:hover {
   color: var(--white);
 }
 
-a:focus {
-  border-bottom: 2px solid var(--white);
-}
 @media (min-width: 320px) and (max-width: 767px) {
   .navlinks {
     position: fixed;
