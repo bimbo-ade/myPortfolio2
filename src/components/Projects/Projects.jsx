@@ -41,13 +41,22 @@ const Projects = () => {
               <span></span>
               <div className="span-content">
                 {" "}
-                <h1> StarWars PJ</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Beatae, consequatur?
+                <h1> Foodlang</h1>
+                <p style={{ textAlign: "center" }}>
+                  {" "}
+                  This is an e-commerce food website that was built bearing the
+                  CRUD operations in mind
                 </p>
                 <div className="btn-cont">
-                  <button>Live</button>
+                  <a
+                    href="
+                    https://myfoodlang.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {" "}
+                    <button>Live</button>
+                  </a>
                   <button>Github</button>
                 </div>
               </div>
@@ -59,12 +68,19 @@ const Projects = () => {
               <div className="span-content">
                 {" "}
                 <h1> StarWars PJ</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Beatae, consequatur?
-                </p>
+                <p style={{ textAlign: "center" }}>
+                  This Project conntects to StarWars Api endpoint fetching
+                  characters and displaying their info
+                </p>{" "}
                 <div className="btn-cont">
-                  <button>Live</button>
+                  <a
+                    href="https://starwarspj.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {" "}
+                    <button>Live</button>
+                  </a>
                   <button>Github</button>
                 </div>
               </div>
@@ -75,13 +91,20 @@ const Projects = () => {
               <span></span>
               <div className="span-content">
                 {" "}
-                <h1> StarWars PJ</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Beatae, consequatur?
+                <h1> Portfolio</h1>
+                <p style={{ textAlign: "center" }}>
+                  This is my personal portfolio built using React Animation
                 </p>
                 <div className="btn-cont">
-                  <button>Live</button>
+                  <a
+                    href="
+                    https://abimbola-adeyemi.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {" "}
+                    <button>Live</button>
+                  </a>
                   <button>Github</button>
                 </div>
               </div>

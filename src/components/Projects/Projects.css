@@ -105,8 +105,9 @@
 }
 .btn-cont {
   display: flex;
-  width: 150px;
-  justify-content: space-around;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
 }
 .span-content button {
   text-align: center;
@@ -183,13 +184,13 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
     margin-top: 0;
   }
 
   .project-container-card .card {
     background-color: white;
-    height: 400px;
+    height: 300px;
     width: 300px;
     border-radius: 0;
     margin-bottom: 3rem;

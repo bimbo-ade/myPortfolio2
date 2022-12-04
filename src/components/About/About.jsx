@@ -39,13 +39,9 @@ const About = () => {
             </div>
 
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-              at. Facere eveniet ratione, laudantium deserunt modi placeat
-              sapiente Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Tempore, at. Facere eveniet ratione, laudantium deserunt modi
-              placeat sapiente repellat ex perspiciatis vitae eligendi. Mollitia
-              tempora iste neque, dolores sint alias?repellat ex perspiciatis
-              vitae eligendi. Mollitia tempora iste neque, dolores sint alias?
+              I am a highly-skilled Web App Developer who loves engaging in
+              projects with a passion to bring ideas to life, creating
+              user-friendly, and seamless Web Applications.
             </p>
           </div>
           <div className="about-me">
