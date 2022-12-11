@@ -42,23 +42,20 @@ const Projects = () => {
               <div className="span-content">
                 {" "}
                 <h1> Foodlang</h1>
-                <p style={{ textAlign: "center" }}>
+                <p style={{ textAlign: "center", padding: "0 5px" }}>
                   {" "}
                   This is an e-commerce food website that was built bearing the
                   CRUD operations in mind
                 </p>
-                <div className="btn-cont">
-                  <a
-                    href="
+                <a
+                  href="
                     https://myfoodlang.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {" "}
-                    <button>Live</button>
-                  </a>
-                  <button>Github</button>
-                </div>
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <button>Live</button>
+                </a>
               </div>
             </div>
           </div>
@@ -68,21 +65,18 @@ const Projects = () => {
               <div className="span-content">
                 {" "}
                 <h1> StarWars PJ</h1>
-                <p style={{ textAlign: "center" }}>
+                <p style={{ textAlign: "center", padding: "0 5px" }}>
                   This Project conntects to StarWars Api endpoint fetching
                   characters and displaying their info
                 </p>{" "}
-                <div className="btn-cont">
-                  <a
-                    href="https://starwarspj.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {" "}
-                    <button>Live</button>
-                  </a>
-                  <button>Github</button>
-                </div>
+                <a
+                  href="https://starwarspj.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <button>Live</button>
+                </a>
               </div>
             </div>
           </div>{" "}
@@ -92,21 +86,18 @@ const Projects = () => {
               <div className="span-content">
                 {" "}
                 <h1> Portfolio</h1>
-                <p style={{ textAlign: "center" }}>
+                <p style={{ textAlign: "center", padding: "0 5px" }}>
                   This is my personal portfolio built using React Animation
                 </p>
-                <div className="btn-cont">
-                  <a
-                    href="
+                <a
+                  href="
                     https://abimbola-adeyemi.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {" "}
-                    <button>Live</button>
-                  </a>
-                  <button>Github</button>
-                </div>
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <button>Live</button>
+                </a>
               </div>
             </div>
           </div>

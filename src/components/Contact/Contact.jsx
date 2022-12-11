@@ -44,10 +44,8 @@ const Contact = () => {
         <div className="contact-cont">
           <div className="contact">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-              autem sapiente eius, corporis nostrum officiis id deserunt porro,
-              tenetur corrupti reiciendis asperiores eos iusto saepe cupiditate
-              voluptas libero minus accusamus!
+              Im happy to answer any questions you have. Reach out to me on any
+              of the social platforms I have provided below.
             </p>
             <div className="social-icons">
               <a

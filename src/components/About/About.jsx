@@ -90,7 +90,7 @@ const About = () => {
               <div className="progress-bar">
                 <h3>Next Js</h3>
                 <ProgressBar
-                  completed={50}
+                  completed={20}
                   className="pb"
                   baseBgColor="var(--white)"
                   borderRadius="0"
@@ -102,7 +102,7 @@ const About = () => {
               <div className="progress-bar">
                 <h3>Typescript</h3>
                 <ProgressBar
-                  completed={20}
+                  completed={10}
                   className="pb"
                   baseBgColor="var(--white)"
                   borderRadius="0"
