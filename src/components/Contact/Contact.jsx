@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 import "./Contact.css";
 
 import { motion } from "framer-motion";
@@ -10,6 +12,27 @@ import {
 } from "react-icons/ai";
 import { BsTelephone } from "react-icons/bs";
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_v273w7i",
+        "template_z0a91wj",
+        form.current,
+        "k1OBQS1NdZD35H449"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <motion.div
       initial={{ opacity: 0, y: "100" }}
@@ -90,12 +113,21 @@ const Contact = () => {
             </div>
           </div>
           <div className="form">
-            <input type="text" placeholder="Name" />
+            {/* <input type="text" placeholder="Name" />
             <input type="email" placeholder="Email" />
             <textarea placeholder="Type a message..."></textarea>
             <button>
               <span></span> Send
-            </button>
+            </button> */}{" "}
+            <form ref={form} onSubmit={sendEmail}>
+              <label>Name</label>
+              <input type="text" name="user_name" />
+              <label>Email</label>
+              <input type="email" name="user_email" />
+              <label>Message</label>
+              <textarea name="message" />
+              <input type="submit" value="Send" />
+            </form>
           </div>
         </div>
       </motion.div>
